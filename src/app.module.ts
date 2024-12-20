@@ -27,7 +27,7 @@ import { MessagesWsModule } from './messages-ws/messages-ws.module';
 
       type: 'postgres',
       host: process.env.DB_HOST,
-      port: +process.env.DB_PORT,
+      port: parseInt(process.env.DB_PORT, 10),
       database: process.env.DB_DATABASE,
       username: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
